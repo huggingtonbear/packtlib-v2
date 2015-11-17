@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>PacktLib</title>
+    <!-- Mobile Home Screen Icons -->
+    <link href="images/apple-icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="images/apple-icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="images/apple-icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="144x144">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500,700|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="spinner_view" style="display: none;">
+        <span id="spinner-overlay"></span> <i class="fa fa-circle-o-notch fa-spin fa-5x spin-wheel" style="color:white; width:;"></i>
+    </div>
+    <div id="wrapper">
+            <!-- Nav -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">PL CONCEPT</a>
+                  <a class="navbar-brand" id="menu-toggle"><i class="fa fa-bars fa-lg nav-icon"></i></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown mr15">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                            Signed in as Oli Huggins 
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Subscriptions</a></li>
+                            <li><a href="#">Licences</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>    
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+            </nav>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                      <form class="mr15 ml15 mt15" role="search">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search Courses...">
+                              <span class="input-group-btn">
+                                <a href="search-results.html" class="btn btn-default" type="button">Go!</a>
+                              </span>
+                            </div><!-- /input-group -->
+                      </form>
+                    <li class="mt10">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="collection.html">My Collection</a>
+                    </li>
+                    <li>
+                        <a href="owned.html">Owned</a>
+                    </li>
+                    <li>
+                        <a href="#playlists" data-toggle="collapse">Browse Playlists <span class="caret"> </span></a>
+                        <div class="" id="playlists">
+                            <ul class="sidebar-nav">
+                            <li class="child-item">
+                                <a href="playlist.html">Front End Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Back End Web</a>
+                            </li>
+                            <li class="child-item active">
+                                <a href="playlist.html">Full Stack Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Databases</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Data Science</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Apps</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Games</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Ethical Hacking</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Maker</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">DevOps</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bookmarks.html">My Bookmarks</a>
+                    </li>
+                    <li>
+                        <a href="ebook.html">Currently Viewing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sidebar End -->
+            <div class="mt50" id="page-content-wrapper">
+                <div class="col-sm-12">
+                    <h2 class="mb25"> Full Stack Web<button class="btn btn-default pull-right hidden-sm hidden-xs disabled">You have <strong>0</strong> Course Token(s) remaining</button></h2>
+                    <hr>
+                </div>
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Front End Web</h3>
+                        </div>
+                        <ul class="list-group" id="playlist1" role="tablist" aria-multiselectable="true">
+                            <!-- Item 1 -->
+                            <div role="tab" id="h1" class="title panel">
+                                <a href="#collapse1" class="collapsed list-group-item list-name " data-toggle="collapse" data-parent="#playlist1" aria-expanded="false" arise-controls="collapse1"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Promises: Practical Applications in ES6 and AngularJS [Video]</strong>
+                                </a>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h1">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Mathieu Chauvinc<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Understand why Promises are all the hype and make full use of their many features and strengths</span></li>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Get ready for ES6 and the many libraries and frameworks that already use Promises, such as Angular</span></li>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Practice each feature on real-life applications from battery status to a weather forecast</span></li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 1 -->
+                            <!-- Item 2 -->
+                            <div role="tab" id="h2" class="title panel">
+                                <a href="#collapse2" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist1" aria-expanded="false" arise-controls="collapse2"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Ionic Cookbook</strong>
+                                </a>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h2">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Hoc Phan<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li>Learn how to utilize the robust features of Ionic CLI and its framework to create, develop, and build your mobile app</li>
+                                            <li>Explore new integrations with various Backend-as-a-Services, along with AngularJS modules, for creative solutions</li>
+                                            <li>Use out-of-the-box Ionic functionalities, customize existing components, and add new components with this comprehensive, step-by-step guide</li>
+                                        </ul>
+                                        <div class="btn-group pull-right" role="group" aria-label="Default button group">
+                                           <div class="btn-group dropup">
+                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download  <span class="ml5 caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="#">Download .PDF</a></li>
+                                              <li><a href="#">Download ePub</a></li>
+                                              <li><a href="#">Download Mobi</a></li>
+                                            </ul>
+                                          </div>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 2 -->
+                            <!-- Item 3 -->
+                            <div role="tab" id="h3" class="title panel">
+                                <a href="#collapse3" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist1" aria-expanded="false" arise-controls="collapse3"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Data Structures and Algorithms [Video]</strong>
+                                </a>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h3">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Rodrigo Formigone Silveira<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Discover how to implement complex data structures such as linked lists, stacks, queues, graphs, and trees using vanilla JavaScript</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Get a good understanding of basic and advanced structures and algorithms</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Master new and upcoming native data structures in ES6 and ES7</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Understand algorithm analysis and implementation to resolve common programming problems</span></li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>  
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 3 -->
+                            <!-- Item 4 -->
+                            <div role="tab" id="h4" class="title panel">
+                                <a href="#collapse4" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist1" aria-expanded="false" arise-controls="collapse4"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Underscore.js</strong>
+                                </a>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h4">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Alex Pop<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information">Understand and learn to apply functional programming principles using the built-in functions of Underscore.js</li>
+                                            <li class="title-information">Leverage and reuse Underscore.js-based code to create code that targets client, server, or database contexts</li>
+                                            <li class="title-information">Take Underscore.js further by reusing code between client and server and by learning about other closely related libraries</li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 4 -->
+                            <!-- Item 5 -->
+                            <div role="tab" id="h5" class="title panel">
+                                <a href="#collapse5" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist1" aria-expanded="false" arise-controls="collapse5"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Node.js for Mobile Application Development</strong>
+                                </a>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h5">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Stefan Buttigieg<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information">Use Node.js to satisfy the core backend requirements of modern apps, including user management, security, data access, and real-time data communication</li>
+                                            <li class="title-information">Build practical real-world mobile applications, which will give you the necessary knowledge to build your very own mobile solutions</li>
+                                            <li class="title-information">Step-by-step development of projects using Ionic Framework as the frontend and Node.js for the backend supported by a MongoDB database</li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                           <div class="btn-group dropup">
+                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download  <span class="ml5 caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="#">Download .PDF</a></li>
+                                              <li><a href="#">Download ePub</a></li>
+                                              <li><a href="#">Download Mobi</a></li>
+                                            </ul>
+                                          </div>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                        <h3 class="panel-title">Back End Web</h3>
+                        </div>
+                        <ul class="list-group" id="playlist2" role="tablist" aria-multiselectable="true">
+                            <!-- Item 1 -->
+                            <div role="tab" id="h6" class="title panel">
+                                <a href="#collapse6" class="collapsed list-group-item list-name " data-toggle="collapse" data-parent="#playlist2" aria-expanded="false" arise-controls="collapse6"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Promises: Practical Applications in ES6 and AngularJS [Video]</strong>
+                                </a>
+                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h6">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Mathieu Chauvinc<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Understand why Promises are all the hype and make full use of their many features and strengths</span></li>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Get ready for ES6 and the many libraries and frameworks that already use Promises, such as Angular</span></li>
+                                            <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Practice each feature on real-life applications from battery status to a weather forecast</span></li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 1 -->
+                            <!-- Item 2 -->
+                            <div role="tab" id="h7" class="title panel">
+                                <a href="#collapse7" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist2" aria-expanded="false" arise-controls="collapse7"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Ionic Cookbook</strong>
+                                </a>
+                                <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h7">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Hoc Phan<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li>Learn how to utilize the robust features of Ionic CLI and its framework to create, develop, and build your mobile app</li>
+                                            <li>Explore new integrations with various Backend-as-a-Services, along with AngularJS modules, for creative solutions</li>
+                                            <li>Use out-of-the-box Ionic functionalities, customize existing components, and add new components with this comprehensive, step-by-step guide</li>
+                                        </ul>
+                                        <div class="btn-group pull-right" role="group" aria-label="Default button group">
+                                           <div class="btn-group dropup">
+                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download  <span class="ml5 caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="#">Download .PDF</a></li>
+                                              <li><a href="#">Download ePub</a></li>
+                                              <li><a href="#">Download Mobi</a></li>
+                                            </ul>
+                                          </div>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 2 -->
+                            <!-- Item 3 -->
+                            <div role="tab" id="h8" class="title panel">
+                                <a href="#collapse8" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist2" aria-expanded="false" arise-controls="collapse8"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Data Structures and Algorithms [Video]</strong>
+                                </a>
+                                <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h8">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Rodrigo Formigone Silveira<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Discover how to implement complex data structures such as linked lists, stacks, queues, graphs, and trees using vanilla JavaScript</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Get a good understanding of basic and advanced structures and algorithms</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Master new and upcoming native data structures in ES6 and ES7</span></li>
+                                        <li class="title-information"><span style="line-height: 20.4px; background-color: transparent;">Understand algorithm analysis and implementation to resolve common programming problems</span></li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>  
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 3 -->
+                            <!-- Item 4 -->
+                            <div role="tab" id="h9" class="title panel">
+                                <a href="#collapse9" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist2" aria-expanded="false" arise-controls="collapse9"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Underscore.js</strong>
+                                </a>
+                                <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h9">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Alex Pop<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information">Understand and learn to apply functional programming principles using the built-in functions of Underscore.js</li>
+                                            <li class="title-information">Leverage and reuse Underscore.js-based code to create code that targets client, server, or database contexts</li>
+                                            <li class="title-information">Take Underscore.js further by reusing code between client and server and by learning about other closely related libraries</li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                          <button type="button" class="btn btn-default">Claim with Course Token</button>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <!-- End of Item 4 -->
+                            <!-- Item 5 -->
+                            <div role="tab" id="h0" class="title panel">
+                                <a href="#collapse0" class="collapsed list-group-item list-name" data-toggle="collapse" data-parent="#playlist2" aria-expanded="false" arise-controls="collapse0"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Node.js for Mobile Application Development</strong>
+                                </a>
+                                <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="h0">
+                                    <li class="list-group-item list-name">
+                                        <p class="ml30"><strong>Author:</strong> Stefan Buttigieg<span class="ml20"><strong>Release Date:</strong> October 2015</span></p>
+                                        <ul>
+                                            <li class="title-information">Use Node.js to satisfy the core backend requirements of modern apps, including user management, security, data access, and real-time data communication</li>
+                                            <li class="title-information">Build practical real-world mobile applications, which will give you the necessary knowledge to build your very own mobile solutions</li>
+                                            <li class="title-information">Step-by-step development of projects using Ionic Framework as the frontend and Node.js for the backend supported by a MongoDB database</li>
+                                        </ul>
+                                        <div class="btn-group pull-right mt15" role="group" aria-label="Default button group">
+                                           <div class="btn-group dropup">
+                                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Download  <span class="ml5 caret"></span></button>
+                                            <ul class="dropdown-menu">
+                                              <li><a href="#">Download .PDF</a></li>
+                                              <li><a href="#">Download ePub</a></li>
+                                              <li><a href="#">Download Mobi</a></li>
+                                            </ul>
+                                          </div>
+                                          <button type="button" class="btn btn-default">Remove</button>
+                                          <button type="button" class="btn btn-default">View</button>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </ul>
+                      </div>
+
+
+                </div>
+
+            </div>
+        <script src="js/jquery.js">
+        </script> 
+        <script src="js/bootstrap.min.js">
+        </script> 
+        <script src="js/simple-sidebar.js">
+        </script>
+    </div>
+</body>
+</html>

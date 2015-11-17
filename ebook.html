@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>PacktLib</title>
+    <!-- Mobile Home Screen Icons -->
+    <link href="images/apple-icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="images/apple-icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="images/apple-icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="144x144">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link href="css/prism.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500,700|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="spinner_view" style="display: none;">
+        <span id="spinner-overlay"></span> <i class="fa fa-circle-o-notch fa-spin fa-5x spin-wheel" style="color:white; width:;"></i>
+    </div>
+    <div id="wrapper">
+            <!-- Nav -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">PL CONCEPT</a>
+                  <a class="navbar-brand" id="menu-toggle"><i class="fa fa-bars fa-lg nav-icon"></i></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown mr15">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                            Signed in as Oli Huggins 
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Subscriptions</a></li>
+                            <li><a href="#">Licences</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>    
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+            </nav>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                      <form class="mr15 ml15 mt15" role="search">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search Courses...">
+                              <span class="input-group-btn">
+                                <a href="search-results.html" class="btn btn-default" type="button">Go!</a>
+                              </span>
+                            </div><!-- /input-group -->
+                      </form>
+                    <li class="mt10">
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="collection.html">My Collection</a>
+                    </li>
+                    <li>
+                        <a href="owned.html">Owned</a>
+                    </li>
+                    <li>
+                        <a href="#playlists" data-toggle="collapse">Browse Playlists <span class="caret"> </span></a>
+                        <div class="collapse" id="playlists">
+                            <ul class="sidebar-nav">
+                            <li class="child-item">
+                                <a href="playlist.html">Front End Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Back End Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Full Stack Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Databases</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Data Science</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Apps</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Games</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Ethical Hacking</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Maker</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">DevOps</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bookmarks.html">My Bookmarks</a>
+                    </li>
+                    <li class="active">
+                        <a href="bookmarks.html">Currently Viewing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sidebar End -->
+            <div class="mt50" id="page-content-wrapper">
+                <div class="col-lg-9 col-sm-8">
+                    <strong>Learning Underscore.js</strong>
+                        <div class="btn-group pull-right mb20" role="group" aria-label="Large button group">
+                              <button type="button" class="btn btn-default"><i class="fa fa-bookmark-o fa-lg"></i></button>
+                              <button type="button" class="btn btn-default"><i class="fa fa-moon-o fa-lg"></i></button> 
+                              <button type="button" class="btn btn-default"><i class="fa fa-font fa-lg"></i></button>
+                        </div>
+                    <div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch02lvl1sec16"></a>Key Underscore functions revisited – each, map, and reduce</h2></div></div><hr></div><p>The previous chapter introduced key Underscore functions<a id="id76" class="indexterm"></a> that are representative of the library and mentioned that some functions can be used with either an array or an object. This flexible <a id="id77" class="indexterm"></a>approach means that some Underscore functions can operate over <span class="strong"><strong>collections</strong></span>: an Underscore-specific term for arrays, array-like objects, and objects (where the collection represents the object properties). We will refer to the elements within these collections as collection items.</p><p>By providing <a id="id78" class="indexterm"></a>functions that operate over object properties Underscore expands JavaScript reflection like capabilities. Reflection is a programming feature for examining the structure of a computer program, especially during program execution.</p><p>JavaScript is a dynamic language without static type system support (as of ES6). This makes it convenient to use a technique called <span class="strong"><strong>duck typing</strong></span> when working with objects that share similar behaviors. Duck typing is a programming technique used in dynamic languages where objects are identified through their structure represented by properties and methods rather than their type (the name of duck typing is derived from the expression "if it walks like a duck, swims like a duck, and quacks like a duck, then it is a duck"). Underscore itself uses duck typing to assert that an object is an array by checking for a property called <code class="literal">length</code> of type <code class="literal">Number</code>.</p><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec20"></a>Applying reflection techniques</h3></div></div></div><p>We will <a id="id79" class="indexterm"></a>build an example that demonstrates duck typing and reflection techniques through a function that will extract object properties so that they can be persisted to a relational database. Usually a relational database stores objects represented as a data row with column types that map to regular SQL data types.</p><p>We will use the <code class="literal">_.each()</code> function to iterate over object properties and extract those of type <code class="literal">boolean</code>, <code class="literal">number</code>, <code class="literal">string</code>, and <code class="literal">Date</code> as they can be easily mapped to SQL data types and ignore everything else:</p><div class="informalexample"><pre class="programlisting  language-markup">var propertyExtractor = (function() {
+  "use strict";
+  return {
+    extractStorableProperties: function(source) {
+      var storableProperties = {};
+      if (!source || source.id !== +source.id) {
+        return storableProperties;
+      }
+      _.each(source, function(value, key) {
+        var isDate = typeof value === 'object' &amp;&amp; value instanceof Date;
+        if (isDate || typeof value === 'boolean' || typeof value === 'number' ||
+          typeof value === 'string') {
+            storableProperties[key] = value;
+          }
+      });
+
+      return storableProperties;
+    }
+  };
+}());</pre></div><p>You can <a id="id80" class="indexterm"></a>find the example in the <code class="literal">propertyExtractor.js</code> file within the <code class="literal">each-with-properties-and-context</code> folder from the source code for this chapter.</p><p>The first highlighted code snippet checks whether the object passed to the <code class="literal">extractStorableProperties()</code> function has a property called <code class="literal">id</code> that is a number. The <code class="literal">+</code> sign converts the <code class="literal">id</code> property into a number and the non-identity operator <code class="literal">!== </code>compares the result of this conversion with the unconverted original value. The non-identity operator returns <code class="literal">true</code> only if the type of the compared objects is different or they are of the same type and have different values.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title"><a id="note09"></a>Note</h3><p>This was a duck typing technique used by Underscore up until version 1.7 to assert whether it deals with an array-like instance or an object instance in its collections related functions.</p><p>Underscore collection related functions operate over array-like objects as they do not strictly check for the built in array object. These functions can also work with the <code class="literal">arguments</code> objects or the HTML DOM <code class="literal">NodeList</code> objects.</p></div><p>The last highlighted code snippet is the <code class="literal">_.each()</code> function that operates over object properties using an iteration function that receives the property value as its first argument and the property name as the optional second argument. If a property has a <code class="literal">null</code> or <code class="literal">undefined</code> value it will not appear in the returned object.</p><p>The <code class="literal">extractStorableProperties()</code> function will return a new object with all the storable properties. The return value is used in the test specifications to assert that, given a sample object, the function behaves as expected:</p><div class="informalexample"><pre class="programlisting  language-markup">describe("Given propertyExtractor", function() {
+  describe("when calling extractStorableProperties()", function() {
+    var storableProperties;
+    beforeEach(function() {
+      var source = {
+        id: 2,
+        name: "Blue lamp",
+        description: null,
+        ui: undefined,
+        price: 10,
+        purchaseDate: new Date(2014, 10, 1),
+        isInUse: true,
+      };
+      storableProperties = propertyExtractor.extractStorableProperties(source);
+    });
+    it("then the property count should be correct", function() {
+      expect(Object.keys(storableProperties).length).toEqual(5);
+    });
+    it("then the 'price' property should be correct", function() {
+      expect(storableProperties.price).toEqual(10);
+    });
+    it("then the 'description' property should not be defined", function() {
+      expect(storableProperties.description).toEqual(undefined);
+    });
+  });
+});</pre></div><p>Notice how <a id="id81" class="indexterm"></a>we used the <code class="literal">propertyExtractor</code> global instance to access the function under test, and then we used the ES5 function <code class="literal">Object.keys</code> to assert that the number of returned properties had the correct size.</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title"><a id="note10"></a>Note</h3><p>In a production ready application, we need to ensure that global object names do not clash, among other best practices. We will explore some techniques that will help to achieve this in <a class="link ng-scope" href="#" linkend="ch07" ng-click="changePageInner($event)">Chapter 7</a>, <span class="emphasis"><em>Underscore.js Build Automation and Code Reusability</em></span>.</p></div><p>You can find the test specification in the <code class="literal">spec/propertyExtractorSpec.js</code> file and execute it by browsing the <code class="literal">SpecRunner.html</code> file from the example source code folder. There is also an <code class="literal">index.html</code> file that will display the results of the example rendered in the <a id="id82" class="indexterm"></a>browser using the <code class="literal">index.js</code> file.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec21"></a>Manipulating the this variable</h3></div></div></div><p>Many <a id="id83" class="indexterm"></a>Underscore functions have a similar signature to <code class="literal">_.each(list, iteratee, [context])</code>, where the optional <code class="literal">context</code> parameter will be used to set the <code class="literal">this</code> value for the <code class="literal">iteratee</code> function when it is called for each collection item. In JavaScript, the built in <code class="literal">this</code> variable will be different depending on the context where it is used.</p><p>We introduced scopes in the previous chapter (<a class="link ng-scope" href="#" linkend="ch01" ng-click="changePageInner($event)">Chapter 1</a>, <span class="emphasis"><em>Getting Started with Underscore.js</em></span>), and it is worth mentioning again that using the function scope is the only way to obscure variables' visibility in ES5 JavaScript.</p><p>When the <code class="literal">this</code> variable is used in the global scope context, and in a browser environment, it will return the native <code class="literal">window</code> object instance. If <code class="literal">this</code> is used in a function scope, then the variable will have different values:</p><div class="itemizedlist"><ul type="bullet"><li style="list-style-type: disc"><p>If the function is an object method or an object constructor, then <code class="literal">this</code> will return the current object instance. Here is a short example code for this scenario:</p><div class="informalexample"><pre class="programlisting  language-markup">var item1 = {
+  id: 1,
+  name: "Item1",
+  getInfo: function(){
+    return "Object: " + this.id + "-" + this.name;
+  }
+};
+console.log(item1.getInfo());
+// -&gt; "Object: 1-Item1"</pre></div></li><li style="list-style-type: disc"><p>If the function does not belong to an object, then <code class="literal">this</code> will be <code class="literal">undefined</code> in the JavaScript strict mode. In the non-strict mode, <code class="literal">this</code> will return its global scope value.</p></li></ul></div><p>With a library such as Underscore that favors a functional style, we need to ensure that the functions used as parameters are using the <code class="literal">this</code> variable correctly. Let's assume that you have a function that references <code class="literal">this</code> (maybe it was used as an object method) and you want to use it with one of the Underscore functions such as <code class="literal">_.each()</code>. You can still use the function as is and provide the desired <code class="literal">this</code> value as the <code class="literal">context</code> parameter value when calling <code class="literal">each</code>.</p><p>I have <a id="id84" class="indexterm"></a>rewritten the previous example function to showcase the use of the <code class="literal">context</code> parameter:</p><div class="informalexample"><pre class="programlisting  language-markup">var propertyExtractor = (function() {
+  "use strict";
+  return {
+    extractStorablePropertiesWithThis: function(source) {
+      var storableProperties = {};
+      if (!source || source.id !== +source.id) {
+        return storableProperties;
+      }
+      _.each(source, function(value, key) {
+        var isDate = typeof value === 'object' &amp;&amp; value instanceof Date;
+        if (isDate || typeof value === 'boolean' || typeof value === 'number' ||
+          typeof value === 'string') {
+            this[key] = value;
+          }
+      },
+      storableProperties);
+      return storableProperties;
+    }
+  };
+}());</pre></div><p>The first highlighted snippet shows the use of <code class="literal">this</code>, which is typical for an object method. The last highlighted snippet shows the <code class="literal">context</code> parameter value that <code class="literal">this</code> was set to. The <code class="literal">storableProperties</code> value will be passed as <code class="literal">this</code> for each <code class="literal">iteratee</code> function call. The test specifications for this example are identical to the previous example, and you can find them in the same folder <code class="literal">each-with-properties-and-context</code> from the source code for this chapter.</p><p>You can use the optional <code class="literal">context</code> parameter in many of the Underscore functions where applicable and is a useful technique when working with functions that rely on a specific <code class="literal">this</code> value.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec22"></a>Using map and reduce with object properties</h3></div></div></div><p>In the <a id="id85" class="indexterm"></a>previous example, we had some user interface-specific code in the <code class="literal">index.js</code> file that was tasked with displaying the results of the <code class="literal">propertyExtractor. extractStorableProperties()</code> call in the browser. Let's pull this functionality into another example and imagine that we need a new function that, given an object, will transform its properties into a format suitable for displaying in a browser by returning an array of formatted text for each property. To achieve this, we will use the Underscore <code class="literal">_.map()</code> function over object properties as demonstrated in the next example:</p><div class="informalexample"><pre class="programlisting  language-markup">var propertyFormatter = (function() {
+  "use strict";
+  return {
+    extractPropertiesForDisplayAsArray: function(source) {
+      if (!source || source.id !== +source.id) {
+        return [];
+      }
+      return _.map(source, function(value, key) {
+        var isDate = typeof value === 'object' &amp;&amp; value instanceof Date;
+        if (isDate || typeof value === 'boolean' || typeof value === 'number' ||
+          typeof value === 'string') {
+          return "Property: " + key + " of type: " + typeof value + " has value: " + value;
+        }
+        return "Property: " + key + " cannot be displayed.";
+      });
+    }
+  };
+}());</pre></div><p>With Underscore, we can write compact and expressive code that manipulates these properties with little effort. The test specifications for the <code class="literal">extractPropertiesForDisplayAsArray()</code> function use Jasmine regular expression matchers to assert the test conditions in the highlighted code snippets from the following example:</p><div class="informalexample"><pre class="programlisting  language-markup">describe("Given propertyFormatter", function() {
+  describe("when calling extractPropertiesForDisplayAsArray()", function() {
+    var propertiesForDisplayAsArray;
+    beforeEach(function() {
+      var source = {
+        id: 2,
+        name: "Blue lamp",
+        description: null,
+        ui: undefined,
+        price: 10,
+        purchaseDate: new Date(2014, 10, 1),
+        isInUse: true,
+      };
+      propertiesForDisplayAsArray = propertyFormatter.extractPropertiesForDisplayAsArray(source);
+    });
+    it("then the returned property count should be correct", function() {
+      expect(propertiesForDisplayAsArray.length).toEqual(7);
+    });
+    it("then the 'price' property should be displayed", function() {
+      expect(propertiesForDisplayAsArray[4]).toMatch("price.+10");
+    });
+    it("then the 'description' property should not be displayed", function() {
+      expect(propertiesForDisplayAsArray[2]).toMatch("cannot be displayed");
+    });
+  });
+});</pre></div><p>The<a id="id86" class="indexterm"></a> following example shows how <code class="literal">_.reduce()</code> is used to manipulate object properties. This will transform the properties of an object into a format suitable for browser display by returning a string value that contains all the properties in a convenient format:</p><div class="informalexample"><pre class="programlisting  language-markup">extractPropertiesForDisplayAsString: function(source) {
+  if (!source || source.id !== +source.id) {
+    return [];
+  }
+  return _.reduce(source, function(memo, value, key) {
+      if (memo &amp;&amp; memo !== "") {
+        memo += "<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>";
+      }
+      var isDate = typeof value === 'object' &amp;&amp; value instanceof Date;
+      if (isDate || typeof value === 'boolean' || typeof value === 'number' ||
+        typeof value === 'string') {
+        return memo + "Property: " + key + " of type: " + typeof value + " has value: " + value;
+      }
+      return memo + "Property: " + key + " cannot be displayed.";
+    },
+    "");
+}</pre></div><p>The <a id="id87" class="indexterm"></a>example is almost identical to the previous one with the exception of the <code class="literal">memo</code> accumulator used to build the returned string value.</p><p>The test specifications for the <code class="literal">extractPropertiesForDisplayAsString()</code> function use a regular expression matcher and can be found in the <code class="literal">spec/propertyFormatterSpec.js</code> file:</p><div class="informalexample"><pre class="programlisting  language-markup">describe("when calling extractPropertiesForDisplayAsString()", function() {
+  var propertiesForDisplayAsString;
+  beforeEach(function() {
+    var source = {
+      id: 2,
+      name: "Blue lamp",
+      description: null,
+      ui: undefined,
+      price: 10,
+      purchaseDate: new Date(2014, 10, 1),
+      isInUse: true,
+    };
+    propertiesForDisplayAsString = propertyFormatter.extractAllPropertiesForDisplay(source);
+  });
+  it("then the returned string has expected length", function() {
+    expect(propertiesForDisplayAsString.length).toBeGreaterThan(0);
+  });
+  it("then the 'price' property should be displayed", function() {
+    expect(propertiesForDisplayAsString).toMatch("<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>Property: price of type: number has value: 10<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">/&gt;</span></span>");
+  });
+});</pre></div><p>The examples from this subsection can be found within the <code class="literal">map.reduce-with-properties</code> folder<a id="id88" class="indexterm"></a> from the source code for this chapter.</p></div></div>
+                    <hr>
+                    <div class="btn-group btn-group-lg btn-group-justified mb40" role="group" aria-label="...">
+                        <div class="btn-group btn-group-lg" role="group">
+                            <button type="button" class="btn btn-default btn-lg"><span class="pull-left"><i class="fa fa-arrow-circle-left fa-lg mr10"></i>Previous Section</span></button>
+                        </div> 
+                        <div class="btn-group btn-group-lg" role="group">
+                            <button type="button" class="btn btn-default"><span class="pull-right">Next Section<i class="fa fa-arrow-circle-right fa-lg ml10"></i></span></button>
+                        </div> 
+                    </div>
+                    <div class="col-xs-12 text-center mb30"><small>ISBN 9781783280339 © Packt Publishing Limited. All Rights Reserved</small></div>
+                    
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default active">Contents</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Bookmarks</button>
+                        </div> 
+                    </div>
+                    <form class="mt15 mb15" role="search">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search this title...">
+                              <span class="input-group-btn">
+                                <a href="search-results.html" class="btn btn-default" type="button">Go!</a>
+                              </span>
+                            </div><!-- /input-group -->
+                      </form>
+
+                    <div class="list-group">
+                      <a href="#" class="list-group-item">
+                        Preface
+                      </a>
+                      <a href="#" class="list-group-item">1. Getting Started with Underscore.js</a>
+                      <a href="#" class="list-group-item">2. Using Underscore.js with Collections</a>
+                        <a href="#" class="pl40 list-group-item active">Key Underscore functions revisited – each, map, and reduce</a>
+                        <a href="#" class="pl40 list-group-item">Searching and filtering</a>
+                        <a href="#" class="pl40 list-group-item">Aggregations and transformations</a>
+                        <a href="#" class="pl40 list-group-item">Other collection-based functions</a>
+                        <a href="#" class="pl40 list-group-item">Summary</a>
+                      <a href="#" class="list-group-item">3. Using Underscore.js with Arrays, Objects, and Functions</a>
+                      <a href="#" class="list-group-item">4. Programming Paradigms with Underscore.js</a>
+                      <a href="#" class="list-group-item">5. Using Underscore.js in the Browser, on the Server, and with the Database</a>
+                      <a href="#" class="list-group-item">6. Related Underscore.js Libraries and ECMAScript Standards</a>
+                      <a href="#" class="list-group-item">7. Underscore.js Build Automation and Code Reusability</a>
+                      <a href="#" class="list-group-item">Appendix A: Index</a>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+        <script src="js/jquery.js">
+        </script> 
+        <script src="js/bootstrap.min.js">
+        </script> 
+        <script src="js/simple-sidebar.js">
+        </script>
+        <script src="js/prism.js">
+        </script>
+    </div>
+
+</body>
+</html>

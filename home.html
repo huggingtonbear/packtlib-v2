@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>PacktLib</title>
+    <!-- Mobile Home Screen Icons -->
+    <link href="images/apple-icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="images/apple-icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="images/apple-icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="images/apple-icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="images/apple-icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="144x144">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font-Awesome CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,500,700|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="spinner_view" style="display: none;">
+        <span id="spinner-overlay"></span> <i class="fa fa-circle-o-notch fa-spin fa-5x spin-wheel" style="color:white; width:;"></i>
+    </div>
+    <div id="wrapper">
+            <!-- Nav -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">PL CONCEPT</a>
+                  <a class="navbar-brand" id="menu-toggle"><i class="fa fa-bars fa-lg nav-icon"></i></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown mr15">
+                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+                            Signed in as Oli Huggins 
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Subscriptions</a></li>
+                            <li><a href="#">Licences</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>    
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+            </nav>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                      <form class="mr15 ml15 mt15" role="search">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Search Courses...">
+                              <span class="input-group-btn">
+                                <a href="search-results.html" class="btn btn-default" type="button">Go!</a>
+                              </span>
+                            </div><!-- /input-group -->
+                      </form>
+                    <li class="mt10 active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="collection.html">My Collection</a>
+                    </li>
+                    <li>
+                        <a href="owned.html">Owned</a>
+                    </li>
+                    <li>
+                        <a href="#playlists" data-toggle="collapse">Browse Playlists <span class="caret"> </span></a>
+                        <div class="collapse" id="playlists">
+                            <ul class="sidebar-nav">
+                            <li class="child-item">
+                                <a href="playlist.html">Front End Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Back End Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Full Stack Web</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Databases</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Data Science</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Apps</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Games</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Ethical Hacking</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">Maker</a>
+                            </li>
+                            <li class="child-item">
+                                <a href="playlist.html">DevOps</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="bookmarks.html">My Bookmarks</a>
+                    </li>
+                    <li>
+                        <a href="ebook.html">Currently Viewing</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sidebar End -->
+            <div class="mt50" id="page-content-wrapper">
+                <div class="col-sm-12">
+                    <h2 class="mb25"> Welcome Oli,<button class="btn btn-default pull-right hidden-sm hidden-xs disabled">You have <strong>2</strong> Course Token(s) remaining</button></h2>
+                    <hr>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Last viewed:</h3>
+                      </div>
+                      <div class="panel-body">
+                        <h4 class="list-name"><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Mastering MEAN Web Development [Video]</h4>
+                        <p>Everything you need to know to build flawless and robust websites with the MEAN stack</p>
+                        <p><strong>Last section:</strong> Under the Hood of the ng-route Generator</p>
+                      </div>
+                       <div class="panel-footer text-right">
+                            <button class="btn btn-default">Continue</button>
+                       </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-bookmark-o fa-lg nav-icon mr10"></i>Recent Bookmarks</h3>
+                      </div>
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item list-name"><strong>Overriding methods and properties</strong> - Mastering Swift 2
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong>Chapter 6: Using Protocols and Protocol Extensions</strong> - Mastering Swift 2
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong>Vectorization</strong> - R High Performance Programming
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong>Using compiled languages in R</strong> - R High Performance Programming
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong>Optional and keyword arguments</strong> - Getting Started with Julia
+                            </a>
+                        </ul>
+                       <div class="panel-footer text-right">
+                        <a href="bookmarks.html">View All</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">New Courses</h3>
+                      </div>
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Promises: Practical Applications in ES6 and AngularJS [Video]</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Data Structures and Algorithms [Video]</strong>
+                            </a>
+                            <a href="ebook.html" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Underscore.js</strong>
+                            </a>
+                            <a href="ebook.html" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Ionic Cookbook</strong>
+                            </a>
+                            <a href="ebook.html" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Node.js for Mobile Application Development</strong>
+                            </a>
+                        </ul>
+                      </div>
+                      <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Popular Courses</h3>
+                      </div>
+                        <ul class="list-group">
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Promises: Practical Applications in ES6 and AngularJS [Video]</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-play-circle-o fa-lg nav-icon mr10"></i>Learning JavaScript Data Structures and Algorithms [Video]</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Underscore.js</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Ionic Cookbook</strong>
+                            </a>
+                            <a href="#" class="list-group-item list-name"><strong><i class="fa fa-book fa-lg nav-icon mr10"></i>Learning Node.js for Mobile Application Development</strong>
+                            </a>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Free Learning - Title of the Day</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h4>Learning Bootstrap</h4>
+                           Web pages that respond immediately to different screen sizes and devices is one of today’s essentials. Packed with screenshots and examples, this book will teach you the professional approach using just HTML5 and CSS3.
+                        </div>
+                        <div class="panel-footer text-right">
+                           <button class="btn btn-default">Claim Free eBook</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <script src="js/jquery.js">
+        </script> 
+        <script src="js/bootstrap.min.js">
+        </script> 
+        <script src="js/simple-sidebar.js">
+        </script>
+    </div>
+</body>
+</html>

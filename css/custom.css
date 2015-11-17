@@ -1,0 +1,30 @@
+/*Custom CSS for PacktLib*/
+
+.list-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 32px;
+  }
+
+.title-information {
+  white-space: normal;
+  margin-bottom: 10px;
+}
+
+.title.panel {
+  margin-bottom: 0px;
+}
+
+a>i.nav-icon {
+  cursor: pointer;
+}
+
+.section p {
+  font-family: Merriweather, serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 2em;
+  word-break: break-word;
+}
+
