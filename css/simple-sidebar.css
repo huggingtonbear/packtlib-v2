@@ -1,6 +1,6 @@
-/*CSS for PacktLib Sidebar*/
+/*CSS for PacktLib Sidebar and stop*/
 #wrapper {
-    padding-right: 0;
+    padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -8,19 +8,19 @@
 }
 
 #wrapper.toggled {
-    padding-left: 250px;
+    padding-right: 250px;
 }
 
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
-    left: 250px;
+    right: 250px;
     width: 0;
     height: 100%;
-    margin-left: -250px;
+    margin-right: -250px;
     overflow-y: auto;
     background: #EEE;
-    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -39,7 +39,7 @@
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
-    margin-right: -250px;
+    margin-left: -250px;
 }
 
 /* Sidebar Styles */
@@ -92,16 +92,16 @@
 }
 
 .child-item {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 250px;
+        padding-right: 250px;
     }
 
     #wrapper.toggled {
-        padding-left: 0;
+        padding-right: 0;
     }
 
     #sidebar-wrapper {
@@ -119,6 +119,6 @@
 
     #wrapper.toggled #page-content-wrapper {
         position: relative;
-        margin-right: 0;
+        margin-left: 0;
     }
 }
