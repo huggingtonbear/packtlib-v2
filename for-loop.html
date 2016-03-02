@@ -9,11 +9,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
+    <title>Learning C++ by Creating Games with UE4 - For Loop</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/annotator.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
@@ -43,6 +42,24 @@
   
 
     <div id="wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Just Checking...</h4>
+              </div>
+              <div class="modal-body">
+                Are you sure you would like to use one of your tokens to purchase this title?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Top Nav Bar -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -71,7 +88,7 @@
                             <li><a href="#">View Subscriptions</a></li> 
                             <li><a href="#">View Licences</a></li> 
                             <li role="separator" class="divider"></li> 
-                            <li><a href="index-lo.html">Logout</a></li> 
+                            <li><a href="library-lo.html">Logout</a></li> 
                         </ul> 
                     </li>
                     </ul>
@@ -104,12 +121,12 @@
                             <input type="text" class="form-control" placeholder="Search this title..." id="box">
                         </form>
                         <div class="clearfix"></div>
-                        <li><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
+                        <li class=""><a href="front-page.html">Learning C++ by Creating Games with UE4</a></li>
                         <li><a href="#" class="completed-section">Preface</a></li>
                         <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
                         <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
-                        <li class="active"><a href="index.html">3. Looping</a></li> 
-                        <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
+                        <li ><a href="index.html">3. Looping</a></li>
+                        <li class="sub-nav active"><a href="for-loop.html">The for loop</a></li>
                         <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
                         <li class="sub-nav"><a href="#">The 'if' loop</a></li>
                         <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li>
@@ -131,12 +148,12 @@
 
         <div id="page-content-wrapper" class="book-page ng-scope">
 
-    <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
+    <!-- ngInclude:  -->
+        <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
                 <div class="reader-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
-                    
                     <div class="row">
-                            <div class="btn-group mb10" role="group">
-                                <button href="#" class="btn btn-default"><i class="fa fa-bookmark-o fa-lg"></i> <span class="hidden-xs ml5"> Bookmark</span></button>
+                         <div class="btn-group mb10" role="group">
+                                <button href="#" class="btn btn-default"><i class="fa fa-bookmark fa-lg"></i> <span class="hidden-xs ml5"> Bookmark</span></button>
                                  <div class="btn-group" role="group">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       <i class="fa fa-download fa-lg"></i><span class="hidden-xs ml5"> Download eBook</span>
@@ -192,13 +209,47 @@
                             </div>
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
-                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating our first view</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Creating our first view</h2></div></div><hr></div><p>Now that <a id="id89" class="indexterm"></a>we have created our URL and interpreted by the routing system, we must ensure that a view (which is a controller in the MVC pattern) meets the customer's demand.</p><p>This is the function of the second parameter of the URLs present in <code class="literal">urls.py</code>. This parameter will define the method that will play the role of a view. Take, for example, our first URL: </p><div class="informalexample"><pre class="programlisting  language-markup">url (r'^$', 'TasksManager.views.index.page'), </pre></div><p>Firstly, as we have seen when studying regular expressions, this URL will be valid only if we browse the <code class="literal">http://localhost:8000</code> URL. The second parameter in the URL means that in the <code class="literal">index.py</code> file, there is a method called <code class="literal">page</code> that will process the request. The <code class="literal">index.py</code> file is located in the <code class="literal">views</code> package at the root of the <code class="literal">TasksManager</code> application.</p><p>When we <a id="id90" class="button" data-container="body" type="button" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">want</a> a folder to be recognized as a package by Python, we need to create a folder that contains the <code class="literal">__init__.py</code> file that we can leave blank.</p><p>You can choose another structure to store your views. You must choose the structure that best fits your project. Have a long-term vision of your project in order to define quality architecture from the first line of code.</p><p>In our <code class="literal">index.py</code> file, we will create a method called <code class="literal">page()</code>. This method will return an HTML page<a id="id91" class="indexterm"></a> to the client. The page is being returned by the HTTP protocol, so we will use the <code class="literal">HttpResponse()</code> function and its importation. The argument of this <code class="literal">HttpResponse()</code> function returns the HTML content that we will return<a id="id92" class="indexterm"></a> to the browser. To simplify reading this example, we do not use a proper HTML structure, because we just return <code class="literal">Hello world!</code> to the client, as shown in the following code:</p><div class="informalexample"><pre class="programlisting  language-markup"># - * - Coding: utf -8 - * -
-                                    from django.http import HttpResponse
-                                    # View for index page.
-                                    def page (request) :
-                                     return HttpResponse ("Hello world!" )</pre></div><p>As we can see in the previous example, we added a comment before our <code class="literal">page()</code> method. Comments are very important. They help you understand your code very quickly.</p><p>We also set the encoding of the UTF-8 characters. This will improve our application's compatibility with other languages. We do not necessarily indicate it later in the book, but it is advisable to use it.</p></div>
-                                    </div>                                                          </div>
-                    </div>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Installing Anaconda</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch02lvl1sec16"></a>Installing Anaconda</h2></div></div><hr></div><p>The installation <a id="id71" class="indexterm"></a>of Anaconda is straightforward, but varies slightly by <a id="id72" class="indexterm"></a>platform. We will cover the installation of Anaconda on Linux, Mac, and Windows platforms. After this installation, pandas will likely need to be updated, which is an identical process across platforms using the <code class="literal">conda</code> package manager.</p><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec12"></a>Installing Anaconda on Linux</h3></div></div></div><p>The <a id="id73" class="indexterm"></a>download will place a shell script/installer on <a id="id74" class="indexterm"></a>your <a id="id75" class="indexterm"></a>system (the following shell script/installer assumes to be downloaded to the <code class="literal">~/Download</code> folder). The name of the file will differ depending upon the Anaconda version and the architecture of Linux selected. This example is using Ubuntu 13.10, AMD64 platform and Anaconda Version 2.1.0. The file downloaded in this scenario is <code class="literal">Anaconda-2.1.0-Linux-x86_64.sh</code>.</p><p>Once <a id="id76" class="indexterm"></a>downloaded, make the script executable and run it <a id="id77" class="indexterm"></a>with the following command:</p><div class="informalexample"><pre class="programlisting  language-markup">mh@ubuntu:~/Downloads$ chmod +x Anaconda-2.1.0-Linux-x86_64.sh
+mh@ubuntu:~/Downloads$ ./Anaconda-2.1.0-Linux-x86_64.sh
+</pre></div><p>The script<a id="id78" class="indexterm"></a> will execute and you will be requested to verify the installation by pressing <span class="emphasis"><em>Enter</em></span>:</p><div class="informalexample"><pre class="programlisting  language-markup">Welcome to Anaconda 2.1.0 (by Continuum Analytics, Inc.)
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+&gt;&gt;&gt;
+</pre></div><p>Then, verify the license terms:</p><div class="informalexample"><pre class="programlisting  language-markup">Do you approve the license terms? [yes|no]
+[no] &gt;&gt;&gt; yes
+</pre></div><p>Then, you will be requested to specify the installation location (here, the default value is accepted):</p><div class="informalexample"><pre class="programlisting  language-markup">Anaconda will now be installed into this location:
+/home/mh/anaconda
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/mh/anaconda] &gt;&gt;&gt;
+</pre></div><p>Installation will proceed for a few minutes, and then you will be asked if you want to add Python to your shell path. Accepting the default will allow Anaconda to be run from the command line without you updating your path manually:</p><div class="informalexample"><pre class="programlisting  language-markup">creating default environment...
+installation finished.
+Do you wish the installer to prepend the Anaconda install location
+to PATH in your /home/mh/.bashrc ? [yes|no]
+[no] &gt;&gt;&gt; yes
+</pre></div><p>Upon completion, the following messages will be displayed; at this point, Python can be run from the shell:</p><div class="informalexample"><pre class="programlisting  language-markup">Prepending PATH=/home/mh/anaconda/bin to PATH in /home/mh/.bashrc
+A backup will be made to: /home/mh/.bashrc-anaconda.bak
+
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Anaconda!
+</pre></div><p>To<a id="id79" class="indexterm"></a> ensure proper execution, close the current terminal <a id="id80" class="indexterm"></a>session, open a new one, and issue the command. Successful<a id="id81" class="indexterm"></a> installation of Anaconda should present the following information (or similar depending upon version):</p><div class="informalexample"><pre class="programlisting  language-markup">mh@ubuntu:~$ python
+Python 2.7.8 |Anaconda 2.1.0 (64-bit)| (default, Aug 21 2014, 18:22:21) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+Anaconda is brought to you by Continuum Analytics.
+Please check out: http://continuum.io/thanks and https://binstar.org
+&gt;&gt;&gt;
+</pre></div><p>Congratulations, you have installed Anaconda! Now proceed to the section on updating pandas.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec13"></a>Installing Anaconda on Mac OS X</h3></div></div></div><p>On<a id="id82" class="indexterm"></a> downloading Anaconda on a Mac, you will get <a id="id83" class="indexterm"></a>an installation package, as shown in the <a id="id84" class="indexterm"></a>following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_02.jpg" class="img-responsive"></div><p>Open<a id="id85" class="indexterm"></a> the package to start the installation. You<a id="id86" class="indexterm"></a> will <a id="id87" class="indexterm"></a>see an installation wizard:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_03.jpg" class="img-responsive"></div><p>Continue through the wizard. When completed, open a terminal session and issue the <code class="literal">python</code> command. If <a id="id88" class="indexterm"></a>all went well, you will see <a id="id89" class="indexterm"></a>output similar to what is shown in the<a id="id90" class="indexterm"></a> following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_04.jpg" class="img-responsive"></div><p>Anaconda is successfully installed, and you can continue to the section on updating pandas with <code class="literal">conda</code>.</p></div><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h3 class="title"><a id="ch02lvl2sec14"></a>Installing Anaconda on Windows</h3></div></div></div><p>Downloading <a id="id91" class="indexterm"></a>Anaconda on a Windows system<a id="id92" class="indexterm"></a> will provide you with an installation executable<a id="id93" class="indexterm"></a> similar to the one shown in the following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_05.jpg" class="img-responsive"></div><p>Run the<a id="id94" class="indexterm"></a> installer, and you will see an installation <a id="id95" class="indexterm"></a>wizard. It will be similar to the wizard<a id="id96" class="indexterm"></a> shown in the next screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_06.jpg" class="img-responsive"></div><p>Continue<a id="id97" class="indexterm"></a> through the wizard. When completed, open<a id="id98" class="indexterm"></a> a command window and issue<a id="id99" class="indexterm"></a> the <code class="literal">python</code> command. If all went well, you will see output similar to what is shown in the following screenshot:</p><div class="mediaobject"><img src="https://www.packtpub.com/graphics/9781783985128/graphics/5128OS_02_07.jpg" class="img-responsive"></div><p>Anaconda<a id="id100" class="indexterm"></a> is up and running and it is time to ensure<a id="id101" class="indexterm"></a> pandas <a id="id102" class="indexterm"></a>is up to date.</p></div></div>
+</div>                                                          </div>
+                  
                     <div class="row"> 
                         <hr>      
                     
@@ -227,12 +278,6 @@
     <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Annotator Script -->
-    <script src="js/annotator.min.js"></script>
-    <script type="text/javascript">
-    var app = new annotator.App();
-    app.start();
-    </script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
 

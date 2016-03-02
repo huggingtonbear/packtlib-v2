@@ -13,13 +13,13 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/annotator.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
+    <link href="css/nightmode.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
 
     <!-- Prism -->
@@ -38,7 +38,7 @@
 
 </head>
 
-<body class="language-markup">
+<body class="nightmode language-markup">
 
   
 
@@ -132,7 +132,7 @@
         <div id="page-content-wrapper" class="book-page ng-scope">
 
     <!-- ngInclude:  --><div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="ng-scope container-fluid">               
-                <div class="reader-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
+                <div class="nightmode reader-container col-sm-12 col-lg-offset-1 col-lg-10 col-xl-offset-2 col-xl-8 ng-scope">
                     
                     <div class="row">
                             <div class="btn-group mb10" role="group">
@@ -148,7 +148,7 @@
                                       <li><a href="#">Download Mobi</a></li>
                                     </ul>
                                   </div>
-                                <a href="index-nightmode.html" class="btn nightmode-toggle btn-default"><i class="fa fa-moon-o fa-lg"></i></a> 
+                                <a href="index.html" class="btn nightmode-toggle btn-default"><i class="fa fa-sun-o fa-lg"></i></a> 
                                 <div class="btn-group" role="group">
                                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                       <i class="fa fa-font fa-lg"></i>
@@ -192,7 +192,7 @@
                             </div>
                         <div style="position:relative;" class="book-content" ng-non-bindable="">
                                 <div class="packtlib-version v2"><!--?xml version="1.0" encoding="UTF-8"?-->
-                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating our first view</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Creating our first view</h2></div></div><hr></div><p>Now that <a id="id89" class="indexterm"></a>we have created our URL and interpreted by the routing system, we must ensure that a view (which is a controller in the MVC pattern) meets the customer's demand.</p><p>This is the function of the second parameter of the URLs present in <code class="literal">urls.py</code>. This parameter will define the method that will play the role of a view. Take, for example, our first URL: </p><div class="informalexample"><pre class="programlisting  language-markup">url (r'^$', 'TasksManager.views.index.page'), </pre></div><p>Firstly, as we have seen when studying regular expressions, this URL will be valid only if we browse the <code class="literal">http://localhost:8000</code> URL. The second parameter in the URL means that in the <code class="literal">index.py</code> file, there is a method called <code class="literal">page</code> that will process the request. The <code class="literal">index.py</code> file is located in the <code class="literal">views</code> package at the root of the <code class="literal">TasksManager</code> application.</p><p>When we <a id="id90" class="button" data-container="body" type="button" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">want</a> a folder to be recognized as a package by Python, we need to create a folder that contains the <code class="literal">__init__.py</code> file that we can leave blank.</p><p>You can choose another structure to store your views. You must choose the structure that best fits your project. Have a long-term vision of your project in order to define quality architecture from the first line of code.</p><p>In our <code class="literal">index.py</code> file, we will create a method called <code class="literal">page()</code>. This method will return an HTML page<a id="id91" class="indexterm"></a> to the client. The page is being returned by the HTTP protocol, so we will use the <code class="literal">HttpResponse()</code> function and its importation. The argument of this <code class="literal">HttpResponse()</code> function returns the HTML content that we will return<a id="id92" class="indexterm"></a> to the browser. To simplify reading this example, we do not use a proper HTML structure, because we just return <code class="literal">Hello world!</code> to the client, as shown in the following code:</p><div class="informalexample"><pre class="programlisting  language-markup"># - * - Coding: utf -8 - * -
+                                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Creating our first view</title><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><div class="section" lang="en" xml:lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="ch03lvl1sec27"></a>Creating our first view</h2></div></div><hr></div><p>Now that <a id="id89" class="indexterm"></a>we have created our URL and interpreted by the routing system, we must ensure that a view (which is a controller in the MVC pattern) meets the customer's demand.</p><p>This is the function of the second parameter of the URLs present in <code class="literal">urls.py</code>. This parameter will define the method that will play the role of a view. Take, for example, our first URL: </p><div class="informalexample"><pre class="programlisting  language-markup">url (r'^$', 'TasksManager.views.index.page'), </pre></div><p>Firstly, as we have seen when studying regular expressions, this URL will be valid only if we browse the <code class="literal">http://localhost:8000</code> URL. The second parameter in the URL means that in the <code class="literal">index.py</code> file, there is a method called <code class="literal">page</code> that will process the request. The <code class="literal">index.py</code> file is located in the <code class="literal">views</code> package at the root of the <code class="literal">TasksManager</code> application.</p><p>When we <a id="id90" class="indexterm"></a>want a folder to be recognized as a package by Python, we need to create a folder that contains the <code class="literal">__init__.py</code> file that we can leave blank.</p><p>You can choose another structure to store your views. You must choose the structure that best fits your project. Have a long-term vision of your project in order to define quality architecture from the first line of code.</p><p>In our <code class="literal">index.py</code> file, we will create a method called <code class="literal">page()</code>. This method will return an HTML page<a id="id91" class="indexterm"></a> to the client. The page is being returned by the HTTP protocol, so we will use the <code class="literal">HttpResponse()</code> function and its importation. The argument of this <code class="literal">HttpResponse()</code> function returns the HTML content that we will return<a id="id92" class="indexterm"></a> to the browser. To simplify reading this example, we do not use a proper HTML structure, because we just return <code class="literal">Hello world!</code> to the client, as shown in the following code:</p><div class="informalexample"><pre class="programlisting  language-markup"># - * - Coding: utf -8 - * -
                                     from django.http import HttpResponse
                                     # View for index page.
                                     def page (request) :
@@ -227,12 +227,6 @@
     <script src="js/prism.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Annotator Script -->
-    <script src="js/annotator.min.js"></script>
-    <script type="text/javascript">
-    var app = new annotator.App();
-    app.start();
-    </script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
 
