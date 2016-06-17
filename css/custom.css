@@ -86,11 +86,12 @@ span.input-group-btn button.btn {
 .jumbotron.heading {
     padding-bottom: 15px;
     padding-top: 79px;
-    background: #2B2B2B;
+    background: #F5F5F5;
 /*    background-image: url('images/sidebar.png');
 */    background-repeat: no-repeat;
     background-position: right;
     color: white;
+    border-bottom: 2px solid #DDDDDD;
 }
 .jumbotron.landingheading {
     padding-bottom: 15px;
@@ -106,7 +107,7 @@ span.input-group-btn button.btn {
 .jumbotron.heading h1 {
   font-weight: 100;
   font-size: 32px;
-  color: white;
+  color: #333;
 }
 .jumbotron.landingheading h1 {
   font-weight: 100;
@@ -133,13 +134,13 @@ span.input-group-btn button.btn {
     font-size: 14px;
 }
 .jumbotron ol>li {
-      color: rgba(255,255,255,0.7) !important;
+      color: rgba(0,0,0,0.7) !important;
 }
 .jumbotron ol a:hover,.jumbotron ol a:focus {
     text-decoration: none;
 }
 .jumbotron ol a {
-    color: #fff;
+    color: #333;
 }
 .jumbotron ul a {
     color: #333;
