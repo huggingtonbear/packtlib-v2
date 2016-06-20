@@ -16,9 +16,6 @@ h1, .h1 {
 .nav-pills > li > a {
     border-radius: 0;
 }
-.panel.panel-default, .panel.panel-default>.panel-heading {
-    border-radius: 0px;
-}
 span.input-group-btn button.btn {
     height: 34px;
     padding-top: 8px;
@@ -695,8 +692,12 @@ blockquote p {
     height: 80px;
     margin-right: 10px;
     margin-left: -5px;
-    margin-top: -16px;
+    margin-top: -15px;
     margin-bottom: -15px;
+}
+.panel-group .panel-footer.card-footer {
+    background-color: #FAB040;
+    padding: 5px;
 }
 .tech-icon.drop {
   height: 85px;
