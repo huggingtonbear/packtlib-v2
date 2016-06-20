@@ -715,6 +715,13 @@ blockquote p {
   font-weight: 300;
   margin-bottom: 20px;
 }
+.card-header {
+  color: white !important;
+  background: #2C2C2C !important;
+  background-image: url('images/card-header.png') !important;
+  background-repeat: no-repeat  !important;
+  background-position-x: right  !important;
+}
 .sm-card-heading {
   margin-top: 10px;
   font-size: 16px;
