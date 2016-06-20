@@ -704,6 +704,7 @@ blockquote p {
 }
 .card-desc {
   padding: 20px;
+  font-size: 16px;
 }
 .tech-icon.drop {
   height: 85px;
@@ -722,10 +723,31 @@ blockquote p {
   font-weight: 300;
   margin-bottom: 20px;
 }
+#accordion .panel-body {
+  background: #3A3939;
+  color: white;
+}
+#accordion .panel-body h5{
+  color:#FAB040;
+}
+#accordion .list-group li {
+  border: 1px solid #484747;
+  background: #222222;
+}
+#accordion .list-group h1 {
+  color:#FAB040;
+}
 .card-header {
   color: white !important;
   background: #2C2C2C !important;
   background-image: url('images/card-header.png') !important;
+  background-repeat: no-repeat  !important;
+  background-position-x: right  !important;
+}
+.plan-card-header {
+  color: white !important;
+  background: #2C2C2C !important;
+  background-image: url('images/plan-card-header.png') !important;
   background-repeat: no-repeat  !important;
   background-position-x: right  !important;
 }
