@@ -8,12 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="apple-touch-icon" sizes="57x57" href="/packtlib-nv/images/apple-icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/packtlib-nv/images/apple-icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/packtlib-nv/images/apple-icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/packtlib-nv/images/apple-icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/packtlib-nv/images/apple-icons/apple-icon-180x180.png">
 
-    <title>Learning C++ by Creating Games with UE4 - Chapter 3. Looping</title>
+    <title>Mapt - Developer Skills Delivered</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- Custom CSS -->
@@ -21,7 +26,6 @@
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
     <link href="css/bootstrap-xl.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <!-- Devicons -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -30,7 +34,7 @@
     <link rel="stylesheet" href="css/prism.css">
 
     <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato:400,500,700' rel='stylesheet' type='text/css'>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,44 +47,30 @@
 </head>
 
 <body class="language-markup">
-
-  <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header python">
+      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img class="tech-icon img-thumbnail" src="images/tech/python.png"/> 
-                                    <h1 class="card-heading">Python Fundamentals </h1>
+        <h4>Remove from Skills</h4>
       </div>
-      <div class="modal-body python">
-        <div class="panel-body">
-            <div class="col-sm-12">
-              <p>Python is one of the easiest languages to get started with. It has a human readable syntax, and fully featured (“batteries included”) standard library to help you get things done right away. It is your portal in to a new world of productive development.</p>
-            </div>
-            <hr>
-            <div class="col-sm-12 left-skillcard mb20">
-                  <ul class="learning-points">
-                    <li>Install and set up Python on Mac, Windows or Linux</li>
-                    <li>Write elegant, reusable, and efficient Python code to use in your future projects</li>
-                    <li>Use Git to manage your Python code</li>
-                    <li>Write Python scripts to automate daily tasks, and other software</li>
-                    <li>Use unit tests to write better code, faster</li>
-                  </ul>
-            </div>
-          </div>
+      <div class="modal-body">
+              <p>Are you sure you want to remove this Skill</p>
       </div>
-      <div class="modal-footer python">
-        <a href="dashboard.html" class="btn btn-danger"><i class="fa fa-minus mr5"></i> Remove from Profile</a>
+      <div class="modal-footer">
+        <button id="myButton" href="#myDiv" type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
       </div>
     </div>
   </div>
 </div>
+  
 
     <div id="wrapper">
 
         <!-- Top Nav Bar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -90,11 +80,10 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand toggle-nav" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars fa-lg"></i></a>
-                  <a class="brand-logo active" href="dashboard.html"><i class="fa fa-map fa-lg mr5"></i><b> MAPT</b></a>
+                  <a class="brand-logo" href="dashboard.html"><img src="images/logo.png"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#contact"><i class="fa fa-question-circle fa-lg mr5"></i> Help</a></li>
                         <li class="dropdown">
                         <a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret ml5"></span>
                         </a>
@@ -114,7 +103,7 @@
                         <div class="form-group pull-right" style="display:inline;">
                             <div class="input-group">
                               <input class="form-control" type="text" placeholder="Search the library...">
-                              <span class="input-group-btn"><button href="search.html" class="btn btn-default" type="button"><i class="fa fa-search"></i></span></button></span>
+                              
                             </div>
                         </div>
                     </form>
@@ -125,132 +114,221 @@
         <div id="sidebar-wrapper">
 
             <ul class="sidebar-nav">
-                    <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Continue</span><span class="pull-right mr5"><i class="fa fa-refresh fa-lg"></i></span></a>    </li>
+              <li><a href="index.html" class="sidenav-menu-holder"><span class="sidenav-menu">Resume Course </span><span class="pull-right mr5"></span></a></li>
+                    <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Map</span><span class="pull-right mr5"><i class="fa fa-caret-down fa-lg"></i></span></a>    </li>
+                    <li class="sub-nav"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Skill Plan</span><span class="pull-right mr5">3</span></a>    </li>
+                    <li class="sub-nav active"><a href="dashboard-profile.html" class="sidenav-menu-holder"><span class="sidenav-menu">Completed Skills </span><span class="pull-right mr5">6</span></a>    </li>
+                    <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
+                    <li class=""><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Courses</span><span class="pull-right mr5"><i class="fa fa-caret-right fa-lg"></i></span></a>    </li>
                     
-                    <li><a href="select-goal.html" class="sidenav-menu-holder"><span class="sidenav-menu">Create a New Plan </span><span class="pull-right mr5"><i class="fa fa-bullseye fa-lg"></i></span></a>    </li>
-                    <li><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Explore the Library  </span><span class="pull-right mr5"><i class="fa fa-archive fa-lg"></i></span></a>    </li>
-                    <li><a href="dashboard-bookmark.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Bookmarks </span><span class="pull-right mr5">6<i class="fa fa-bookmark fa-lg"></i></span></a>    </li>
-                    <li><a href="dashboard-collection.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Collection </span><span class="pull-right mr5">12<i class="fa fa-plus fa-lg"></i></span></a>    </li>
-                    <li><a href="dashboard-owned.html" class="sidenav-menu-holder"><span class="sidenav-menu">Purchases  </span><span class="pull-right mr5">7<i class="fa fa-shopping-bag fa-lg"></i></span></a>    </li>
-                
             </ul>
         </div>
 
         <!-- /#sidebar-wrapper -->
 
         <div id="page-content-wrapper" class="">
-            <div class="jumbotron heading">
+            <div class="jumbotron heading mb0">
                 <div class="container-fluid">
-                  <div class="col-sm-6">
-                    <h1>Oli Huggins </h1>
+                  <div class="col-sm-12">
+                    <h1 >Completed Skills</h1>
+
                     <ol class="breadcrumb row mt0">
-                      <li class="active mt5"><b>Current Objective:</b> Become a Python Developer @ Nginx</li>
+                      <li class="mt5">From here you can see what skills you have completed so far</li>
                     </ol>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    <!-- <div class="progress mb0">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                        <span class="sr-only">40% Complete</span>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
-                   <div class="col-sm-6 hidden-xs">
-                        <div class="thumbnail pt20 pull-right">
-                            <ol><a href="dashboard.html">Back to My Plan</a></ol>
-                        </div>
-                   </div>
                 </div>
             </div>
-            <div id="book-wrapper" onload="finishLoad()" ng-include="" src="views.book" class="container-fluid">               
+            <div id="book-wrapper" class="container-fluid">               
                 <div class="row">
-                        <div class="col-sm-12">
-                           
-                            <div class="col-sm-12">
-                                <div class="input-group mb20 mt10">
-                                  <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
-                                  <input type="text" class="form-control quicksearch" placeholder="Search for a Skill">
-                                </div>
-                                <div class="btn-group mb40 mt0" id="filters">
-                                    <button class="btn btn-default active" data-filter="*">Show All</button>
-                                    <button class="btn btn-default" data-filter=".program">Programming</button>
-                                    <button class="btn btn-default" data-filter=".dev">Development</button>
-                                    <button class="btn btn-default" data-filter=".admin">Administration</button>
-                                    <button class="btn btn-default" data-filter="ss">Soft Skills</button>
-                                    <button class="btn btn-default" data-filter=".tech">Technical Concepts and Tasks</button>
-                                  </div>
-                                <div class="grid row">
-                                    <!-- Skill Card -->
-                                    <div class="element-item program col-sm-12" data-category="program">
-                                      <div class="panel panel-default clickable" data-toggle="modal" data-target="#myModal">
-                                        <div class="panel-heading django">                                            
-                                          <img class="tech-icon-sm img-thumbnail pull-left mr15" src="images/tech/django.png"/>
-                                          <h2 class="sm-card-heading ml15 mb0"><b>Django Up To Speed</b> - Proficiency: 76.5%</h2>
-                                          <div class="progress mt15 mb5">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 76.5%;">
-                                            </div>
+                            <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+
+                                    <div class="mt30">
+                                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
+                                              <span class="card-heading mb5 mt0">Data Analysis with Python</span>
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Skill Card END -->
-                                    <!-- Skill Card -->
-                                    <div class="element-item program col-sm-12" data-category="program">
-                                      <div class="panel panel-default clickable" data-toggle="modal" data-target="#myModal">
-                                        <div class="panel-heading java">                                            
-                                          <img class="tech-icon-sm img-thumbnail pull-left mr15" src="images/tech/java.png"/>
-                                          <h2 class="sm-card-heading ml15 mb0"><b>RESTful Java Programming</b>- Proficiency: 55.2%</h2>
-                                          <div class="progress mt15 mb5">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55.2%;">
-                                            </div>
+                                          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Gaining insight from your data is one of the most important tasks for any Python developer. There will never be a scenario or situation you find yourself in when it’s not useful to make data-driven decisions in the interests or your clients or users. From web developers to Machine Learning Engineers, you can achieve a lot with some simple data analysis skills</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Analyze and visualize data with pandas, NumPy, matplotlib, and seaborn through iPython and the Jupyter notebook</li>
+                                                      <li>Perform highly-efficient numerical computations with Numba, Cython, and ipyparallel</li>
+                                                      <li>Use the basics of data exploration and analysis to extract insight from your data</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Skill Card END -->
-                                    <!-- Skill Card -->
-                                    <div class="element-item program col-sm-12" data-category="program">
-                                      <div class="panel panel-default clickable" data-toggle="modal" data-target="#myModal">
-                                        <div class="panel-heading java">                                            
-                                          <img class="tech-icon-sm img-thumbnail pull-left mr15" src="images/tech/java.png"/>
-                                          <h2 class="sm-card-heading ml15 mb0"><b>Reactive Java Programming</b> - Proficiency: 12.8%</h2>
-                                          <div class="progress mt15 mb5">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 12.8%;">
-                                            </div>
+                                        </div> <!-- Panel -->
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
+                                              <span class="card-heading mb5 mt0">Object-Oriented Python Programming</span>
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Skill Card END -->
-                                    <!-- Skill Card -->
-                                    <div class="element-item admin col-sm-12" data-category="admin">
-                                      <div class="panel panel-default clickable" data-toggle="modal" data-target="#myModal">
-                                        <div class="panel-heading mysql">                                            
-                                          <img class="tech-icon-sm img-thumbnail pull-left mr15" src="images/tech/mysql.png"/>
-                                          <h2 class="sm-card-heading ml15 mb0"><b>MySQL Administration</b> - Assessment Not Completed</h2>
-                                          <div class="progress mt15 mb5">
-                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                            </div>
+                                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Object-oriented programming is a powerful design paradigm that allows you to manipulate data and behavior together by creating objects. Understanding how to write Object-Oriented code is an important part of Python programming, as it allows you to stop writing simple scripts, and start creating more complex programs.</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Implement objects in Python by creating classes and defining methods</li>
+                                                      <li>Write concurrent Python code with asyncio</li>
+                                                      <li>Utilize different design patterns for the _init_() method</li>
+                                                      <li>Map Python objects to a SQL database using the built-in SQLite module</li>
+                                                      <li>Perform object serialization in formats such as JSON, YAML, Pickle, CSV, and XML</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
                                           </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Skill Card END -->
-                                    <!-- Skill Card -->
-                                    <div class="element-item tech col-sm-12" data-category="tech">
-                                      <div class="panel panel-default clickable" data-toggle="modal" data-target="#myModal">
-                                        <div class="panel-heading git">                                            
-                                          <img class="tech-icon-sm img-thumbnail pull-left mr15" src="images/tech/git.png"/>
-                                          <h2 class="sm-card-heading mt25 ml15 mb25"><b>Git Fundamentals</b></h2>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <!-- Skill Card END -->
-                                    
-                                  </div>
-                            </div>
+                                        </div> <!-- Panel -->
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
+                                              <span class="card-heading mb5 mt0">Functional Python Programming</span>
+                                          </div>
+                                          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>As your Python applications start to gain features and grow in complexity, your code base can fail to scale to meet your increased demands. Functional programming breaks your code in to modules, allowing you to compose applications from different parts that can be swapped in and out, more easily maintained, and tested to make sure your large-scale applications are production ready.</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Implement common functional design patterns and techniques in Python</li>
+                                                      <li>Utilize Python library modules including itertools, functools, multiprocessing, and concurrent.futures</li>
+                                                      <li>Optimize your functional code</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
+                                          </div>
+                                        </div> <!-- Panel -->
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
+                                              <span class="card-heading mb5 mt0">Testing Python</span>
+                                          </div>
+                                          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Testing is vital to the smooth-running of any application. Python code is no different. Creating Test-Driven applications puts testing at the heart of your development process, making sure you applications are ready to deploy more efficiently.</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Understand and implement the test-driven development process in your Python applications</li>
+                                                      <li>Effectively add features to your existing Python projects that don’t have unit tests</li>
+                                                      <li>Integrate unit testing into the overall software delivery process</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
+                                          </div>
+                                        </div> <!-- Panel -->
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/django.png"/>
+                                              <span class="card-heading mb5 mt0">Django Basics</span>
+                                          </div>
+                                          <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Django adopts the same “batteries included” philosophy as Python, and has options straight out of the box for all major web development aspects such as authentication, routing, and templating, as well as database schema migrations. It is the best choice for the productive Python programmer to make professional web applications.</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Build four real-world web applications with Django, from scatch</li>
+                                                      <li>Build RESTful APIs for your web applications</li>
+                                                      <li>Integrate other technologies such as JavaScript, Redis, Celery and Solr to create engaging and fully-featured applications</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
+                                          </div>
+                                        </div> <!-- Panel -->
+                                        <div class="panel panel-default" id="myDiv">
+                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                              <img class="tech-icon drop hidden-xs" src="images/tech/android.png"/>
+                                              <span class="card-heading mb5 mt0">Android UI Design</span>
+                                          </div>
+                                          <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                              <div class="panel-body">
+                                                <div class="card-desc">
+                                                  <p><b><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Making great and engaging applications starts with the design: if it doesn’t feel great to use, your customers won’t use your application. With the increasing number of devices and screen sizes accessing your application, delivering that great user experience consistently has become its own challenge over the past few years.</b></p>
+                                                  <p><b>“Android UI Design” will help you put Google’s design aesthetic, Material Design, to work and help you understand the fundamental building blocks of composable UIs in Android, with Fragments.</b></p>
+                                                </div>
+                                                <hr>
+                                                <div class="dashboard-skillcard">
+                                                  <ul class="learning-points mt20">
+                                                      <li>Build your first material design inspired applications</li>
+                                                      <li>Use the material design principle on a host of components such as; drawers, menus, and navigation</li>
+                                                      <li>Utilize material design frameworks to help supercharge your UI designs</li>
+                                                      <li>Build modularized UIs with Fragments</li>
+                                                      <li>Create rich navigation with Fragments</li>
+                                                  </ul>
+                                                  <div class="text-center">
+                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-default btn-lg mt10 mb5 pl25 pr25">Remove from Skills<i class="glyphicon glyphicon-remove ml10"></i></a>
+                                                  </div>
+                                                  <div class="clearfix"></div>
+                                                </div>
+                                              </div>
+                                          </div>  
+                                          <div class="panel-footer card-footer">
+                                          </div>
+                                        </div> <!-- Panel -->
+                                      </div><!-- Panel group -->
+                                    </div> <!-- col-sm-12 -->
+
+
+                              </div>
+                          </div>
                           
-                        </div>
+
                   </div><!-- row -->
-			</div><!-- /#book-wrapper -->
-		</div><!-- /#page-content-wrapper -->
-	</div><!-- /#wrapper -->
+      </div><!-- /#book-wrapper -->
+    </div><!-- /#page-content-wrapper -->
+  </div><!-- /#wrapper -->
+    
 
     <!-- JAVASCRIPT BLOCKS -->
 
@@ -262,93 +340,15 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Sidebar Toggle Script -->
     <script src="js/simple-sidebar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
-    $( function() {
-  // quick search regex
-  var qsRegex;
-  var buttonFilter;
-  
-  // init Isotope
-  var $container = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    filter: function() {
-      var $this = $(this);
-      var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
-      var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
-      return searchResult && buttonResult;
-    }
-  });
-
-  $('#filters').on( 'click', 'button', function() {
-    buttonFilter = $( this ).attr('data-filter');
-    $container.isotope();
-  });
-  
-  // use value of search field to filter
-  var $quicksearch = $('.quicksearch').keyup( debounce( function() {
-    qsRegex = new RegExp( $quicksearch.val(), 'gi' );
-    $container.isotope();
-  }) );
-
-  
-    // change is-checked class on buttons
-  $('.btn-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.active').removeClass('active');
-      $( this ).addClass('active');
+    $("#myButton").click(function() {
+         $("#myDiv").fadeTo("slow", 0.01, function(){ //fade
+             $(this).slideUp("slow", function() { //slide up
+                 $(this).remove(); //then remove from the DOM
+                });
+             });
     });
-  });
-  
-  
-});
-
-// debounce so filtering doesn't happen every millisecond
-function debounce( fn, threshold ) {
-  var timeout;
-  return function debounced() {
-    if ( timeout ) {
-      clearTimeout( timeout );
-    }
-    function delayed() {
-      fn();
-      timeout = null;
-    }
-    setTimeout( delayed, threshold || 100 );
-  };
-}
-
     </script>
-    <script type="text/javascript">
-    //Morris charts snippet - js
-
-        $.getScript('http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',function(){
-        $.getScript('http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js',function(){
-
-          Morris.Line({
-                element: 'line-example',
-                data: [
-                  {date: '2016-02-24', a: 4, b: 10 },
-                  {date: '2016-02-25', a: 0, b: 8 },
-                  {date: '2016-02-26', a: 15, b: 11 },
-                  {date: '2016-02-27', a: 0, b: 7 },
-                  {date: '2016-02-28', a: 2, b: 3 },
-                  {date: '2016-02-29', a: 3, b: 10 },
-                  {date: '2016-03-01', a: 1, b: 15 }
-                ],
-                xkey: 'date',
-                ykeys: ['a','b'],
-                labels: ['Sections You Completed', 'Avg. Developer Sections Completed'],
-                behaveLikeLine: 'true',
-                lineColors: ['#5CB85C', '#ccc']
-              });
-          
-        });
-        });
-    </script>
-
 </body>
 
 </html>
