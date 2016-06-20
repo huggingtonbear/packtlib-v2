@@ -70,8 +70,7 @@ span.input-group-btn button.btn {
 /* Jumbotron Header Styles */
 
 .jumbotron.heading .btn {
-  background: rgba(255,255,255,0.2);
-  color: #D8D8D8;
+  margin-top: 5px;
 }
 .img-product-header {
     float: right;
