@@ -116,8 +116,8 @@
             <ul class="sidebar-nav">
               <li><a href="index.html" class="sidenav-menu-holder"><span class="sidenav-menu">Resume Course </span><span class="pull-right mr5"></span></a></li>
                     <li class="active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Map</span><span class="pull-right mr5"><i class="fa fa-caret-down fa-lg"></i></span></a>    </li>
-                    <li class="sub-nav active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Skill Plan</span><span class="pull-right mr5">3</span></a>    </li>
-                    <li class="sub-nav"><a href="dashboard-profile.html" class="sidenav-menu-holder"><span class="sidenav-menu">Completed Skills </span><span class="pull-right mr5">6</span></a>    </li>
+                    <li class="sub-nav active"><a href="dashboard.html" class="sidenav-menu-holder"><span class="sidenav-menu">My Skill Plan</span><span class="pull-right mr5">0</span></a>    </li>
+                    <li class="sub-nav"><a href="dashboard-profile.html" class="sidenav-menu-holder"><span class="sidenav-menu">Completed Skills </span><span class="pull-right mr5">0</span></a>    </li>
                     <li class="sub-nav"><a href="usage.html" class="sidenav-menu-holder"><span class="sidenav-menu">Progress</span><span class="pull-right mr5"></span></a>    </li>
                     <li class="sub-nav"><a href="roles.html" class="sidenav-menu-holder"><span class="sidenav-menu">Skill Plans </span></a>    </li>
                     <li class=""><a href="library.html" class="sidenav-menu-holder"><span class="sidenav-menu">Courses</span><span class="pull-right mr5"><i class="fa fa-caret-right fa-lg"></i></span></a>    </li>
@@ -131,10 +131,10 @@
             <div class="jumbotron heading mb0">
                 <div class="container-fluid">
                   <div class="col-sm-12">
-                    <h1 >My Skill Plan</h1>
+                    <h1 >Welcome to Mapt</h1>
 
                     <ol class="breadcrumb row mt0">
-                      <li class="mt5">From here you can see what skills you have queued up to learn next</li>
+                      <li class="mt5">Improving your career or just skilling up - we have the tools to help you get ahead</li>
                     </ol>
                     <!-- <div class="progress mb0">
                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
@@ -145,241 +145,27 @@
                 </div>
             </div>
             <div id="book-wrapper" class="container-fluid">               
-                <div class="row">
-                            <div class="col-sm-12 col-lg-offset-1 col-lg-10">
-
-                                    <div class="mt30">
-                                      <h5><b>Python Developer:</b> 6/9  Skills Completed</h5>
-                                      <div class="progress mt5 mb25">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
-                                          <span class="sr-only">40% Complete</span>
-                                        </div>
-                                      </div>
-                                    
-                                        
-                                      
-                                      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                        <div class="panel panel-default" id="myDiv">
-                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
-                                              <span class="card-heading mb5 mt0">Python Fundamentals</span>
-                                          </div>
-                                          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                              <div class="card-desc">
-                                                <p><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Python is one of the easiest languages to get started with. It has a human readable syntax, and fully featured (“batteries included”) standard library to help you get things done right away. It is your portal in to a new world of productive development.</p>
-                                              </div>
-                                              <hr>
-                                              <div class="col-sm-5">
-                                                <div class="">
-                                                  <div class="dashboard-skillcard">
-                                                    <ul class="learning-points mt20">
-                                                        <li>Install and set up Python on Mac, Windows or Linux</li>
-                                                        <li>Write elegant, reusable, and efficient Python code to use in your future projects</li>
-                                                        <li>Use Git to manage your Python code</li>
-                                                        <li>Write Python scripts to automate daily tasks, and other software</li>
-                                                        <li>Use unit tests to write better code, faster</li>
-                                                    </ul>
-                                                    <div class="text-center">
-                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg mt10 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
-                                                  </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <div class="">
-                                                  <ul class="list-group">
-                                                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
-                                                      <a href="index.html"><img src="images/book1.jpg" class="img-product-list hidden-xs"></a>
-                                                          <h1>Practical Machine Learning</h1>
-                                                          <p class="mb5">By Sunila Gollapudi</p>
-                                                            <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                          
-                                                          
-                                                          <small ng-if="fivePopular.field_date_of_publication[0].value" class=" mr10 ng-binding ng-scope mt10">Jan 2016</small>
-                                                          <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>14 hours 02 minutes</small>
-                                                          <br>
-                                                          <a href="index.html" class="btn btn-info pull-right btn-lg mt20">Resume Learning <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                          <div class="clearfix">
-                                                          </div>
-                                                      </li>
-                                                      <li ng-repeat="(key, fivePopular) in fivePopular" href="/packtlib/book/Web-Development/9781785281341" class="list-group-item list-name ng-scope">
-                                                          <a href="front-page.html"><img src="images/book3.jpg" class="img-product-list hidden-xs"></a>
-                                                          <h1>Mastering JavaScript</h1>
-                                                          <p class="mb5">By Ved Antani</p>
-                                                          <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                          
-                                                          
-                                                          <small ng-if="fivePopular.field_date_of_publication[0].value" class="mr10 ng-binding ng-scope mt10">Jan 2016</small>
-                                                          <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>7 hours 30 minutes</small>
-                                                          <br>
-                                                          
-                                                          <a href="front-page.html" class="btn btn-info pull-right btn-lg mt20">View Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                          <div class="clearfix">
-                                                          </div>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="panel-footer card-footer">
-                                            </div>
-                                          </div> <!-- Panel -->
-                                          <div class="panel panel-default">
-                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                              <img class="tech-icon drop hidden-xs" src="images/tech/python.png"/>
-                                              <span class="card-heading mb5 mt0">Python High Performance Programming</span>
-                                          </div>
-                                          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                              <div class="card-desc">
-                                                <p><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Performance bottlenecks can break otherwise great applications and it’s important that you know how to avoid them. High performance techniques can help your applications scale, and perform consistently; no matter how much data you’re crunching or how many users you’re serving.</p>
-                                              </div>
-                                              <hr>
-                                              <div class="col-sm-5">
-                                                <div class="">
-                                                  <div class="dashboard-skillcard">
-                                                    <ul class="learning-points mt20">
-                                                        <li>Use Cython to create blazing fast applications using Python and C</li>
-                                                        <li>Master code optimization techniques, and learn about all 16 classic design patterns</li>
-                                                        <li>Deploy decorators, design patters, and various optimization techniques to use Python 3.5 effectively</li>
-                                                    </ul>
-                                                    <div class="text-center">
-                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg mt10 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
-                                                  </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <div class="">
-                                                  <ul class="list-group">
-                                                      <li ng-repeat="(key, fivePopular) in fivePopular" href="/packtlib/book/Web-Development/9781785281341" class="list-group-item list-name ng-scope">
-                                                        <a href="front-page.html"><img src="images/book3.jpg" class="img-product-list hidden-xs"></a>
-                                                        <h1>Mastering JavaScript</h1>
-                                                        <p class="mb5">By Ved Antani</p>
-                                                        <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                          
-                                                        
-                                                        <small ng-if="fivePopular.field_date_of_publication[0].value" class="mr10 ng-binding ng-scope mt10">Jan 2016</small>
-                                                        <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>7 hours 30 minutes</small>
-                                                        <br>
-                                                        
-                                                        <a href="front-page.html" class="btn btn-info pull-right btn-lg mt20">View Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                    </li><li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
-                                                        <a href="front-page.html"><img src="images/book4.jpg" class="img-product-list hidden-xs"></a>
-                                                        <h1>Learning Predictive Analytics with Python</h1>
-                                                        <p class="mb5">By Ashish Kumar</p>
-                                                        <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                        
-                                                        
-                                                        <small ng-if="fivePopular.field_date_of_publication[0].value" class="mr10 ng-binding ng-scope mt10">Feb 2016</small>
-                                                        <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>10 hours 37 minutes</small>
-                                                        <br>
-                                                        
-                                                        <a href="front-page.html" class="btn btn-info pull-right btn-lg mt20">View Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                    </li><li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
-                                                        <a href="index.html"><img src="images/book5.jpg" class="img-product-list hidden-xs"></a>
-                                                        <h1>Mastering Django Web Development [Video]</h1>
-                                                        <p class="mb5">By Kevin Veroneau </p>
-                                                        <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                        
-                                                        
-                                                        <small ng-if="fivePopular.field_date_of_publication[0].value" class=" mr10 ng-binding ng-scope mt10">Jan 2016</small>
-                                                        <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>1 hour</small>
-                                                        
-                                                        <a href="index.html" class="btn btn-info pull-right btn-lg mt20">Resume Learning <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                    </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="panel-footer card-footer">
-                                            </div>
-                                          </div> <!-- Panel -->
-                                          <div class="panel panel-default">
-                                          <div class="panel-heading clickable card-header" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                              <img class="tech-icon drop hidden-xs" src="images/tech/django.png"/>
-                                              <span class="card-heading mb5 mt0">Production Ready Django</span>
-                                          </div>
-                                          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                              <div class="card-desc">
-                                                <p><i class="fa fa-info-circle mr5" aria-hidden="true"></i>Django is the framework that powers some of the world’s most popular websites and web applications, such as Instagram, Pinterest and Disqus.</p>
-                                                <p>Scaling Django, both in terms of features and users, is difficult. As with any framework, it is more balanced towards developer efficiency than performance and optimization. “Production Ready Django” will help you gain the skills you need to create robust applications that are ready to go live.</p>
-                                              </div>
-                                              <hr>
-                                              <div class="col-sm-5">
-                                                <div class="">
-                                                  <div class="dashboard-skillcard">
-                                                    <ul class="learning-points mt20">
-                                                        <li>Use common design patterns that can help you write better, more efficient, Django code</li>
-                                                        <li>Reduce your future maintenance burden with well-tested, cleaner Python code</li>
-                                                        <li>Create a rich user experience using Ajax and other JavaScript techniques</li>
-                                                    </ul>
-                                                    <div class="text-center">
-                                                    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg mt10 mb5 pl25 pr25">I know all of this <i class="glyphicon glyphicon-ok ml10"></i></a>
-                                                  </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <div class="col-sm-7">
-                                                <div class="">
-                                                  <ul class="list-group">
-                                                      <li ng-repeat="(key, fivePopular) in fivePopular" href="/packtlib/book/Web-Development/9781785281341" class="list-group-item list-name ng-scope">
-                                                        <a href="front-page.html"><img src="images/book3.jpg" class="img-product-list hidden-xs"></a>
-                                                        <h1>Mastering JavaScript</h1>
-                                                        <p class="mb5">By Ved Antani</p>
-                                                        <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                          
-                                                        
-                                                        <small ng-if="fivePopular.field_date_of_publication[0].value" class="mr10 ng-binding ng-scope mt10">Jan 2016</small>
-                                                        <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>7 hours 30 minutes</small>
-                                                        <br>
-                                                        
-                                                        <a href="front-page.html" class="btn btn-info pull-right btn-lg mt20">View Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                      </li>
-                                                      <li ng-repeat="(key, fivePopular) in fivePopular" href="index.html" class="list-group-item list-name ng-scope">
-                                                        <a href="front-page.html"><img src="images/book4.jpg" class="img-product-list hidden-xs"></a>
-                                                        <h1>Learning Predictive Analytics with Python</h1>
-                                                        <p class="mb5">By Ashish Kumar</p>
-                                                        <p class="mb5"><small>Modernize existing Python code and plan code migrations to Python using this definitive guide</small></p>
-                                                        
-                                                        
-                                                        <small ng-if="fivePopular.field_date_of_publication[0].value" class="mr10 ng-binding ng-scope mt10">Feb 2016</small>
-                                                        <small class=" title-duration ng-binding mt10"><i class="fa fa-clock-o mr5"></i>10 hours 37 minutes</small>
-                                                        <br>
-                                                        
-                                                        <a href="front-page.html" class="btn btn-info pull-right btn-lg mt20">View Course <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
-                                                        <div class="clearfix">
-                                                        </div>
-                                                      </li>
-                                                    </ul>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="panel-footer card-footer">
-                                            </div>
-                                          </div> <!-- Panel -->
-                                        </div><!-- Panel group -->
-                                      </div> <!-- col-sm-12 -->
-
-
-                              </div>
-                          </div>
-                          
-
-                  </div><!-- row -->
+                <div class="row mt30">
+                  <div class="col-md-6 col-lg-offset-1 col-lg-5"> 
+                    <h4>Choose a Skill Plan</h4>
+                    <p>We've built our roles on real world data from over 20,000 surveyed developers, from people working for industry giants such as <b>LinkedIn</b> and <b>Amazon</b>, to <b>BT</b> and <b>Sky</b>, meaning all of the skills presented here give you the best possible representation of the vital skills you need to become a best in class developer.</p>
+                    <a href="roles.html" class="btn btn-info btn-lg mt10">Get Started <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>     
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <img src="images/webdevcompanies.jpg" class="img-responsive mt50"/>        
+                  </div>
+                  <div class="col-sm-12 col-lg-offset-1 col-lg-10">
+                    <hr>
+                  </div>
+                  <div class="col-md-6 col-lg-offset-1 col-lg-5"> 
+                    <h4>Explore our Course Library</h4>
+                    <p>We've built our roles on real world data from over 20,000 surveyed developers, from people working for industry giants such as <b>LinkedIn</b> and <b>Amazon</b>, to <b>BT</b> and <b>Sky</b>, meaning all of the skills presented here give you the best possible representation of the vital skills you need to become a best in class developer.</p>
+                    <a href="library.html" class="btn btn-info btn-lg mt10">Explore Library <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>     
+                  </div>
+                  <div class="col-md-6 col-lg-5">
+                    <img src="images/products.png" class="img-responsive"/>          
+                  </div>
+                </div><!-- row -->
       </div><!-- /#book-wrapper -->
     </div><!-- /#page-content-wrapper -->
   </div><!-- /#wrapper -->
