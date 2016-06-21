@@ -740,16 +740,12 @@ blockquote p {
 .card-header {
   color: white !important;
   background: #2C2C2C !important;
-  background-image: url('images/card-header.png') !important;
-  background-repeat: no-repeat  !important;
-  background-position-x: right  !important;
+  background-image: url('images/card-header.png') no-repeat right top !important;
 }
 .plan-card-header {
   color: white !important;
   background: #2C2C2C !important;
-  background-image: url('images/plan-card-header.png') !important;
-  background-repeat: no-repeat  !important;
-  background-position-x: right  !important;
+  background-image: url('images/plan-card-header.png') no-repeat right top !important;
 }
 .sm-card-heading {
   margin-top: 10px;
