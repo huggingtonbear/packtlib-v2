@@ -739,13 +739,17 @@ blockquote p {
 }
 .card-header {
   color: white !important;
-  background: #2C2C2C !important;
-  background-image: url('images/card-header.png') no-repeat right top !important;
+  background-color: #2C2C2C !important;
+  background: url('images/card-header.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .plan-card-header {
   color: white !important;
-  background: #2C2C2C !important;
-  background-image: url('images/plan-card-header.png') no-repeat right top !important;
+  background-color: #2C2C2C !important;
+  background: url('images/plan-card-header.png');
+  background-repeat: no-repeat;
+  background-position: right;
 }
 .sm-card-heading {
   margin-top: 10px;
