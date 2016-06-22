@@ -272,6 +272,9 @@ b.landing {
 .navbar-inverse .in .search-nav-collapse {
   height: 58px;
 }
+.navbar-inverse .in .search-nav-collapse .input-group {
+  width:100%;
+}
 .logout-wrapper {
   padding: none;
 }
