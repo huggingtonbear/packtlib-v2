@@ -190,8 +190,12 @@ span.input-group-btn button.btn {
   background-color: #8C8C8C;
   color: white;
 }
+.pricing-body-featured {
+  background-color: #444;
+  color: white;
+}
 .navbar-inverse.landing {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
 }
 b.landing {
   color: #FF8F00;

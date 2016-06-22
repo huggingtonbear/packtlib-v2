@@ -88,7 +88,40 @@
         <div id="sidebar-wrapper">
 
             <ul class="sidebar-nav">
-                <h5 class="text-center mt30" style="color:white;">Course Not Available</h5>
+                <ul id="toc" class="nav nav-pills nav-justified" role="tablist">
+                    <li class="active ml15" style="text-indent: 0px;">
+                        <a href="#contents" id="contents-tab" role="tab" data-toggle="tab" aria-controls="contents" aria-expanded="true">Contents</a>
+                    </li>
+                    <li style="text-indent: 0px;">
+                        <a href="#bookmark" role="tab" id="bookmark-tab" data-toggle="tab" aria-controls="bookmark" aria-expanded="false">Bookmarks (2)</a>
+                    </li>
+                </ul>
+                <div id="TocContent" class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active pt15" id="contents" aria-labelledby="contents-tab"> 
+                        <form class="col-sm-12 mb15 ng-pristine ng-valid ng-scope" ng-submit="sidebarSearchSubmit()" ng-if="currentPage != 'video'">
+                               <input type="text" class="form-control book_search_query" ng-keyup="sidebarSearchChange()" placeholder="Search this course...">
+                        </form>
+                        <div class="clearfix"></div>
+                        <li class="active"><a href="front-page.html">Mastering JavaScript</a></li>
+                        <li><a href="#" class="completed-section">Preface</a></li>
+                        <li><a href="#" class="completed-section">1. Preparing your Data</a></li>
+                        <li><a class="completed-section" href="#">2. Driving Visual Analysis with Automated Automobiles</a></li>
+                        <li ><a href="index.html">3. Looping</a></li> <!-- 
+                        <li class="sub-nav"><a href="for-loop.html">The for loop</a></li>
+                        <li class="sub-nav"><a href="#" class="completed-section">The for/while loop</a></li>
+                        <li class="sub-nav"><a href="#">The 'if' loop</a></li>
+                        <li class="sub-nav"><a href="#">Looping with Unreal Engine</a></li> -->
+                        <li><a href="#">4. Forms and Entries</a></li>
+                        <li><a href="#">5. Functions and Macros</a></li>
+                        <li><a href="#">6. Dynamic Memory Allocation</a></li>
+                        <li><a href="#">7. If, Else and Switch</a></li>
+                        <li><a href="#">8. Actors and Roles</a></li>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade pt15" id="bookmark" aria-labelledby="bookmark-tab"> 
+                        <li><a href="#" class="completed-section">Preface</a></li>
+                        <li><a href="#" class="completed-section">1. Preparing your Data</a></li> 
+                    </div>
+                </div>
             </ul>
         </div>
 
@@ -121,11 +154,11 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="btn btn-default disabled">
-                                <i class="fa fa-folder-open-o fa-lg"></i>
-                                <span class="hidden-xs ml5">Save for Later</span></button>
+                                <button class="btn btn-default">
+                                <i class="fa fa-folder fa-lg"></i>
+                                <span class="hidden-xs ml5">Saved</span></button>
                                 
-                                <button class="btn btn-default hidden-xs disabled">
+                                <button class="btn btn-default hidden-xs">
                                 <i class="fa fa-file fa-lg"></i>
                                 <span class="hidden-xs ml5">Code Files</span></button>                        
                                 <div class="btn-group" role="group">
@@ -161,7 +194,7 @@
                                 
 
                             <p class="mt20 mb20"><b>Learn the hot new front-end web framework from Facebook: ReactJS, an easy way of developing the V in MVC and a better approach to software engineering in functional JavaScript</b></p>
-                            <a href="index.html" class="btn btn-info btn-lg pull-right disabled">Coming Soon</a>
+                            <a href="index.html" class="btn btn-info btn-lg pull-right">Resume Learning <i class="fa fa-chevron-right ml5" aria-hidden="true"></i></a>
                             <div class="clearfix"></div>
 
                             </div>
