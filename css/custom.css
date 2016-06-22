@@ -738,7 +738,9 @@ blockquote p {
   margin-bottom: 20px;
 }
 #accordion .panel-body {
-  background: #3A3939;
+  background-color: #3A3939;
+  background-image: url('images/cardbg.png');
+  background-size: cover;
   color: white;
 }
 #accordion .panel-body h5{
