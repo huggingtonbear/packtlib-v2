@@ -33,6 +33,20 @@ span.input-group-btn button.btn {
 }
 /*Boostrap Overwritten Rules END*/
 
+/* Course Search Styles */
+.search-text. {
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.search_results_show {
+    color: white;
+}
+.search_results_show a {
+    color: white;
+}
+/* Course Search Styles END */
+
 /* Top Nav Bar Styles */
 .brand-logo {
   color: #677280;
