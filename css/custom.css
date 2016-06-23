@@ -824,5 +824,8 @@ blockquote p {
 .list-group {
   border-radius: 0;
 }
+.survey-number {
+  color: #FAB040;
+}
 /* Product Listing END */
 
