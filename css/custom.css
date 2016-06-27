@@ -16,6 +16,9 @@ h1, .h1 {
 .nav-pills > li > a {
     border-radius: 0;
 }
+.btn {
+  min-height: 36px;
+}
 span.input-group-btn button.btn {
     height: 34px;
     padding-top: 8px;
