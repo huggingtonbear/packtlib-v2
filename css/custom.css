@@ -770,6 +770,11 @@ blockquote p {
   background-repeat: no-repeat;
   background-position: right;
 }
+.plan-card-counter {
+  margin-left: 15px;
+  font-weight: 700;
+  color: #f2b146;
+}
 .plan-card-header {
   color: white !important;
   background-color: #2C2C2C !important;
